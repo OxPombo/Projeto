@@ -1,17 +1,20 @@
+import { useState } from 'react'
+
 import './App.css';
-import SegundaLista from './components/evento/SegundaLista';
+import Ola from './components/Ola';
+import SeuNome from './components/SeuNome';
+
 
 function App() {
-  
-  const meusItens = ['React', 'Vue', 'Angular'] /* Array = Lista de algo */
-
+  const [name, setName] = useState()
+ 
   return (
 
     <div className="App">
       
-       <h1> Renderização de listas</h1>
-      <SegundaLista itens={meusItens} />
-      <SegundaLista itens={[]} />
+      <h1> State lift </h1>
+      <SeuNome setName={setName}/>
+      <Ola name={name}/>
     </div>
   );
   
