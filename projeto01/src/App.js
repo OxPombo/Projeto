@@ -1,23 +1,36 @@
-import { useState } from 'react'
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
-import './App.css';
-import Ola from './components/Ola';
-import SeuNome from './components/SeuNome';
-
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import AboutUs from './pages/AboutUs'
 
 function App() {
-  const [name, setName] = useState()
- 
-  return (
 
-    <div className="App">
+  return (
+    
+    <Router>
+      <ul> 
+        <li>
+          <Link to="/"> Home </Link>
+        </li> 
+        <li>
+          <Link to="/AboutUs"> About us </Link>
+        </li>
+        <li>
+          <Link to="/Contact"> Contact  </Link>
+        </li>
+      </ul>
       
-      <h1> State lift </h1>
-      <SeuNome setName={setName}/>
-      <Ola name={name}/>
-    </div>
+      <Routes> 
+       
+       <Route path='/' element={<Home />}></Route>
+
+        <Route path='/AboutUs' element={<AboutUs />}></Route>
+
+        <Route path='/Contact' element={<Contact />}></Route>
+      </Routes>
+    </Router>
   );
-  
 }
 
 export default App;
