@@ -4,22 +4,16 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import AboutUs from './pages/AboutUs'
 
+import NavBar from './components/layout/NavBar'
+import Footer from './components/layout/Footer'
+
 function App() {
 
   return (
-    
-    <Router>
-      <ul> 
-        <li>
-          <Link to="/"> Home </Link>
-        </li> 
-        <li>
-          <Link to="/AboutUs"> About us </Link>
-        </li>
-        <li>
-          <Link to="/Contact"> Contact  </Link>
-        </li>
-      </ul>
+  
+          <Router>
+            
+            <NavBar />
       
       <Routes> 
        
@@ -28,8 +22,14 @@ function App() {
         <Route path='/AboutUs' element={<AboutUs />}></Route>
 
         <Route path='/Contact' element={<Contact />}></Route>
+      
       </Routes>
+
+      <Footer />
+
     </Router>
+    
+
   );
 }
 

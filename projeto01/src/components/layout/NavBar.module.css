@@ -1,0 +1,28 @@
+
+.navList {
+
+    display: flex;
+    list-style: none;
+    background-color: #759f57;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: right;
+    
+}
+
+.navList :hover{
+    text-decoration-color: #000000;
+}
+/* text-align: Vertical - justify-content: Horizontal */
+
+.item{
+
+    margin-right: 1em;
+    margin-top: 1px;    
+    border: 20px solid #759f57;
+    text-decoration: none;
+}
+
+
+
+
