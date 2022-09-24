@@ -1,4 +1,4 @@
-<img src="https://img.shields.io/badge/study-java_scrpityellow">
+<img src="https://img.shields.io/badge/study-java_scrpit-yellow">
 
 Estudo de React // Andrei de Oliveira Athaide
 
