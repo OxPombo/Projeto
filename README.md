@@ -4,3 +4,6 @@ Estudo de React // Andrei de Oliveira Athaide
 
 
 Current study: React router and React icons
+
+<span class="fa-solid fa-python"></span>
+
